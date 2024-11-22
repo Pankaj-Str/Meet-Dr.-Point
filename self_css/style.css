@@ -4,11 +4,17 @@
    margin-right: 12px;
 }
 .bg_nav{
-   background-color: rgb(235, 232, 228);
+   background-color: #ededec;;
 }
 .h1_color{
    color: brown;
 }
 .h1_sub{
    color: rgb(4, 118, 211);
+}
+.bg_color{
+   background-color: #f8f8f6;
+}
+.btn_bg{
+   background-color: rgb(4, 118, 211);
 }
