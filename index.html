@@ -43,11 +43,11 @@
                     <i class="bi bi-gear"></i> Services
                 </a>
                 <ul class="dropdown-menu border-0 dropdown_design">
-                  <li><a class="dropdown-item border border-1 border-primary shadow rounded-pill text-center pe-3 ps-3 m-2" href="#">Action</a></li>
+                  <li><a class="dropdown-item border border-1 border-primary shadow rounded-pill text-center pe-3 ps-3 m-2 bg-light" href="#">Action</a></li>
              
-                  <li><a class="dropdown-item border border-1 border-primary  shadow rounded-pill text-center pe-3 ps-3 m-2" href="#">Another action</a></li>
+                  <li><a class="dropdown-item border border-1 border-primary  shadow rounded-pill text-center pe-3 ps-3 m-2 bg-light" href="#">Another action</a></li>
                  
-                  <li><a class="dropdown-item border border-1 border-primary shadow rounded-pill text-center pe-3 ps-3 m-2" href="#">Something else here</a></li>
+                  <li><a class="dropdown-item border border-1 border-primary shadow rounded-pill text-center pe-3 ps-3 m-2 bg-light" href="#">Something else here</a></li>
                 </ul>
               </li>
 
@@ -59,7 +59,7 @@
             
                 <ul class="navbar-nav me-auto mb-2 mb-lg-0">
                     <li class="nav-item">
-                        <a class="nav-link border border-1 border-primary rounded-pill text-center pe-3 ps-3 m-2 btn_bg text-white " aria-current="page" href="#"> <i class="bi bi-person-circle"></i> Login </a>
+                        <a data-bs-toggle="modal" data-bs-target="#login" class="nav-link border border-1 border-primary rounded-pill text-center pe-3 ps-3 m-2 btn_bg text-white " aria-current="page" href="#"> <i class="bi bi-person-circle"></i> Login </a>
                       </li>
                 </ul>
 
@@ -68,6 +68,34 @@
           </div>
         </div>
       </nav>
+
+<!-- modal code start login  -->
+
+<div class="modal fade" id="login">
+  <div class="modal-dialog modal-dialog-centered ">
+    <div class="modal-content">
+      <div class="modal-header bg-primary">
+        <h1 class="modal-title fs-5 text-white">Login Now !</h1>
+        <button type="button" class="btn-close bg-light" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        <div class="m-2">
+            <label class="form-label">Email </label>
+            <input type="email"  class="form-control">
+        </div>
+        <div class="m-2">
+          <label class="form-label">Password </label>
+          <input type="password" class="form-control">
+      </div>
+      </div>
+      <div class="modal-footer">
+        <button class="btn btn-danger">Submit</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- modal codes end login -->
 
 
     <!-- header section end -->
