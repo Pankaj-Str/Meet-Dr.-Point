@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="bootstrap/css/main.css">
+    <script src="bootstrap/js/main.js"></script>
+    <link rel="stylesheet" href="self_css/style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+
+</head>
+<body class="bg_color">
+    
+    <!-- header section start  -->
+
+    <nav class="navbar navbar-expand-lg bg_nav">
+        <div class="container">
+          <a class="navbar-brand" href="#">
+            <img src="image/stethoscope.png" height="70" width="70">
+           <span class="h1_sub pt-5 pb-4">
+            
+            Meet Dr.<span class="h1_color">Point</span></span>
+          </a>
+          <button class="navbar-toggler text-primary border border-1 border-primary" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              
+              <li class="nav-item">
+                <a class="nav-link border border-1 border-primary shadow rounded-pill text-center pe-3 ps-3 m-2" aria-current="page" href="index.html"> <i class="bi bi-house-add"></i> Home</a>
+              </li>
+
+              <li class="nav-item">
+                <a class="nav-link border border-1 border-primary shadow rounded-pill text-center pe-3 ps-3 m-2" aria-current="page" href="faq.html"> <i class="bi bi-question-circle"></i> FAQ</a>
+              </li>
+
+
+
+              <li class="nav-item dropdown-center ">
+                <a class="nav-link dropdown-toggle border border-1  border-primary shadow rounded-pill text-center pe-3 ps-3 m-2" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                    <i class="bi bi-gear"></i> Services
+                </a>
+                <ul class="dropdown-menu border-0 dropdown_design">
+                  <li><a class="dropdown-item border border-1 border-primary shadow rounded-pill text-center pe-3 ps-3 m-2 bg-light" data-bs-toggle="offcanvas" href="#action" href="#">Action</a></li>
+             
+                  <li><a class="dropdown-item border border-1 border-primary  shadow rounded-pill text-center pe-3 ps-3 m-2 bg-light" href="#">Another action</a></li>
+                 
+                  <!-- <li><a class="dropdown-item border border-1 border-primary shadow rounded-pill text-center pe-3 ps-3 m-2 bg-light" href="#">Something else here</a></li> -->
+                </ul>
+              </li>
+
+              <li class="nav-item">
+                <a class="nav-link border border-1 border-primary rounded-pill shadow text-center pe-3 ps-3 m-2" aria-current="page" href="#"> <i class="bi bi-envelope"></i> Contact Us </a>
+              </li>
+
+            </ul>
+            
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a data-bs-toggle="modal" data-bs-target="#login" class="nav-link border border-1 border-primary rounded-pill text-center pe-3 ps-3 m-2 btn_bg text-white " aria-current="page" href="#"> <i class="bi bi-person-circle"></i> Login </a>
+                      </li>
+                </ul>
+
+                
+      
+          </div>
+        </div>
+      </nav>
+
+<!-- start offcanvas service section start  -->
+
+<div class="offcanvas offcanvas-end" id="action">
+    <div class="offcanvas-header border  border-1 border-primary">
+        <h5 class="offcanvas-title">Hospital Service</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+      </div>
+      <div class="offcanvas-body">
+            <div class="row">
+                <div class="col-ms-12">
+                    <div class="card shadow-lg m-2">
+                        <div class="card-header">
+                          Featured
+                        </div>
+                        <div class="card-body">
+                          <h5 class="card-title">Special title treatment</h5>
+                          <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
+                          <a href="#" class="btn btn-primary">Go somewhere</a>
+                        </div>
+                      </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-ms-12">
+                    <div class="card shadow-lg m-2">
+                        <div class="card-header">
+                          Featured
+                        </div>
+                        <div class="card-body">
+                          <h5 class="card-title">Special title treatment</h5>
+                          <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
+                          <a href="#" class="btn btn-primary">Go somewhere</a>
+                        </div>
+                      </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-ms-12">
+                    <div class="card shadow-lg m-2">
+                        <div class="card-header">
+                          Featured
+                        </div>
+                        <div class="card-body">
+                          <h5 class="card-title">Special title treatment</h5>
+                          <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
+                          <a href="#" class="btn btn-primary">Go somewhere</a>
+                        </div>
+                      </div>
+                </div>
+            </div>
+            
+      </div>
+</div>
+<!-- start offcanvas service section end  -->
+
+
+<!-- modal code start login  -->
+
+<div class="modal fade" id="login">
+  <div class="modal-dialog modal-dialog-centered ">
+    <div class="modal-content">
+      <div class="modal-header bg-primary">
+        <h1 class="modal-title fs-5 text-white">Login Now !</h1>
+        <button type="button" class="btn-close bg-light" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        <div class="m-2">
+            <label class="form-label">Email </label>
+            <input type="email"  class="form-control">
+        </div>
+        <div class="m-2">
+          <label class="form-label">Password </label>
+          <input type="password" class="form-control">
+      </div>
+      </div>
+      <div class="modal-footer">
+        <button class="btn btn-danger">Submit</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- modal codes end login -->
+
+
+    <!-- header section end -->
+        
+    
+    <!-- center faq section start  -->
+
+        <div class="container border shadow-lg mt-4">
+            <div class="row">
+                <div class="col-sm-4">
+                    <img src="image/rfaq.png" class="img-fluid">
+                </div>
+                <div class="col-sm-8">
+                    <h4 class="text-center p-2">Frequently Asked Questions</h4>
+
+                    <!-- start faq section  -->
+                    
+                        <div class="accordion">
+
+                            <!-- start faq 1 -->
+
+                            <div class="accordion-item border border-1 border-primary m-2">
+                                <h2 class="accordion-header">
+                                    <button class="accordion-button" data-bs-toggle="collapse" data-bs-target="#faq1">
+                                        What are good questions to ask doctors ?
+                                    </button>
+                                </h2>
+                                <div class="accordion-collapse collapse show" id="faq1">
+                                       <div class="accordion-body">
+                                            <h6>Questions to ask your doctor about your diagnosis</h6>
+                                            <ul>
+                                                <li>What may have caused this condition? Will it be permanent?</li>
+                                                <li>How is this condition treated or managed? What will be the long-term effects on my life?</li>
+                                                <li>
+                                                    How can I learn more about my condition?
+                                                </li>
+                                            </ul>
+                                       </div>
+                                </div>
+                            </div>
+
+                            <!-- end faq 1 -->
+                              <!-- start faq 2 -->
+
+                            <div class="accordion-item border border-1 border-primary m-2">
+                                <h2 class="accordion-header">
+                                    <button class="accordion-button" data-bs-toggle="collapse" data-bs-target="#faq2">
+                                        What is the main information about doctors?
+                                    </button>
+                                </h2>
+                                <div class="accordion-collapse collapse" id="faq2">
+                                       <div class="accordion-body">
+                                        <p>
+                                            Medical doctors <mark><b>examine, diagnose and treat patients</b></mark> examine, diagnose and treat patients. They can specialize in a number of medical areas, such as pediatrics, anesthesiology or cardiology, or they can work as general practice physicians. Becoming a medical doctor requires a doctoral degree in medicine and participating in clinical training.
+                                        </p>
+                                       </div>
+                                </div>
+                            </div>
+
+                            <!-- end faq 2 -->
+
+                            <!-- start faq 3 -->
+
+                            <div class="accordion-item border border-1 border-primary m-2">
+                                <h2 class="accordion-header">
+                                    <button class="accordion-button" data-bs-toggle="collapse" data-bs-target="#faq3">
+                                        Who is a first doctor?
+                                    </button>
+                                </h2>
+                                <div class="accordion-collapse collapse" id="faq3">
+                                       <div class="accordion-body">
+                                        <h6>Hippocrates</h6>
+                                        <p>
+                                            <b>Hippocrates</b> born around 460 BCE in Greece, is often referred to as the "Father of Medicine." He significantly advanced the practice of medicine by emphasizing a rational, systematic approach to diagnosis and treatment.22 May 2024
+                                        </p>
+                                       </div>
+                                </div>
+                            </div>
+
+                            <!-- end faq 3 -->
+
+                        </div>
+                    
+                    
+                    <!-- end faq section  -->
+
+
+                </div>
+            </div>
+        </div>
+
+
+
+    <!-- center faq section end  -->
+
+
+
+
+
+
+</body>
+</html>
